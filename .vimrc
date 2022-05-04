@@ -26,5 +26,5 @@ inoremap {}     {}
 map <C-a> <esc>ggVG<CR>
 
 autocmd BufNewFile *.cpp 0r C:\Users\kulac\Coding\Competitive\Templates\V1.cpp
-autocmd filetype cpp nnoremap <F9> :w <bar> !g++ -std=c++11 -O2 -Wall % -o %:r && %:r.exe <CR>
-map <F5> :w<CR>:!python %<CR>"
+autocmd filetype cpp nnoremap <F9> :w <bar> vert ter ++shell g++ -std=c++17 -O2 -Wall % -o %:r && %:r.exe <CR>
+autocmd Filetype python nnoremap <buffer> <F5> :w<CR>:vert ter python "%"<CR>
